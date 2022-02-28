@@ -1,0 +1,27 @@
+// Import ----------
+
+@import "reset";
+@import "variables";
+@import "global";
+@import "navigation";
+@import "media";
+@import "home";
+@import "service";
+@import "works";
+@import "testimonials";
+@import "clients";
+@import "footer";
+
+
+
+body {
+  background: #f4f4f4;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+

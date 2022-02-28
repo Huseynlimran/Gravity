@@ -1,0 +1,169 @@
+#home {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 126px;
+  height: 100vh;
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 800px;
+    width: 100%;
+    z-index: -1;
+    max-height: 90vh;
+    @media (max-width: $breakpoint992) {
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+    }
+    @media (max-width: $breakpoint768) {
+      max-width: 300px;
+    }
+    @media (max-width: $breakpoint480) {
+      right: -25%;
+    }
+  }
+  .home__1 {
+    padding-top: 126px;
+    max-width: 470px;
+    @media (max-width: $breakpoint480) {
+      padding-top: 60px;
+    }
+    h1 {
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 70px;
+      letter-spacing: -1px;
+      margin-bottom: 30px;
+      @media (max-width: $breakpoint768) {
+        font-size: 46px;
+        width: 100%;
+      }
+      @media (max-width: $breakpoint480) {
+        font-size: 34px;
+      }
+    }
+    p {
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+    }
+    button {
+      margin-top: 56px;
+      background-color: $blue;
+      padding: 17px 34px;
+      color: white;
+      border: none;
+      outline: none;
+      font-family: Fira Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      cursor: pointer;
+      @media (max-width: $breakpoint480) {
+        right: -25%;
+        width: 100%;
+      }
+    }
+  }
+  .photo1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    max-width: 300px;
+    @media (max-width: $breakpoint768) {
+      transform: translate(-50%, 60%);
+      width: 95%;
+    }
+  }
+}
+// home 2
+
+.home__2 {
+  margin-top: 10%;
+  @media (max-width:$breakpoint768){
+    margin-top: 30%;
+  }
+  .flexo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 1016px) {
+      .photo {
+        flex: 0 1 100%;
+        margin-bottom: 20px;
+        .bg3 {
+          width: 100%;
+        }
+      }
+    }
+    .home__text {
+      max-width: 540px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      @media (max-width: 1016px) {
+        flex: 0 1 95%;
+          margin-bottom: 20px;
+          max-width: 95%;
+      }
+
+      h1 {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: -1px;
+        @media(max-width: $breakpoint768){
+          font-size: 26px;
+        }
+      }
+      p {
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        color: $lightblack;
+      }
+    }
+    .ceo {
+      display: flex;
+      align-items: center;
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 35px;
+        h5 {
+          font-family: Fira Sans;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 32px;
+        }
+        p {
+          font-family: Fira Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 28px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
